@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * implements hook_theme().
+ */
+function restrictip_theme($existing, $type, $theme, $path) {
+  return [
+    'block__restrictip' => [
+      'render element' => 'form',
+      'template' => 'block--restrictip',
+    ],
+    'block__restrictip_block' => [
+      'render element' => 'element',
+      'template' => 'block--restrictip-block',
+    ],
+  ];
+}
